@@ -1,1 +1,1 @@
-void main() { IO.println("salut zenika"); }
+void main() { IO.println("salut le monde"); }
