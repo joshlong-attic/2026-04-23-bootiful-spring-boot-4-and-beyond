@@ -1,0 +1,16 @@
+<html> 
+
+ <body>
+ <script>
+   window.addEventListener ('load' , async (e) => {
+	   const msg = (await (await fetch('/api/message')).json())['message']
+
+	   console.log('msg: ' + msg) 
+	   document.getElementById('m').innerHTML = msg 
+   })
+ </script>
+
+ <div id="m"> </div>  
+
+ </body>
+</html>
